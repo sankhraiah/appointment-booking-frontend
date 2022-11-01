@@ -10,7 +10,7 @@ pipeline {
         stage("Deploy") {
             steps {
                 sh "sudo rm -rf /var/www/NodeJS-Pipeline-Job"
-                sh "sudo cp -r ${WORKSPACE}/build/ /var/www/NodeJS-Pipeline-Job/"
+                sh "sudo cp -r ${WORKSPACE}/NodeJS-Automation/ /var/www/NodeJS-Pipeline-Job/"
             }
         }
     }
