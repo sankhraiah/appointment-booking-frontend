@@ -3,9 +3,9 @@ pipeline {
      stages {
         stage("Build") {
             steps {
-                sh "sudo npm install"
-                sh "sudo npm run  build"
-                sh "sudo nohup npm start &"
+                sh "npm install"
+                sh "npm run  build"
+                sh "nohup npm start &"
             }
         }
         stage("Deploy") {
